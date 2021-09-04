@@ -247,9 +247,8 @@ class SNBT_Constructor {
     }
 
     stringify() {
-      let snbt_string = "{"
-      console.log(this.#snbt_array);
-
+      let snbt_string = "{";
+      
       for (var i = 0; i < this.#snbt_array.length; i++) {
 
         switch (this.#snbt_array[i][0]) {
@@ -329,7 +328,6 @@ class SNBT_Constructor {
 
 
       snbt_string += "}";
-      console.log(snbt_string);
       return snbt_string;
     }
 
